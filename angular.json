@@ -103,9 +103,21 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "tourist-attraction-guide"
+  "defaultProject": "tourist-attraction-guide",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
