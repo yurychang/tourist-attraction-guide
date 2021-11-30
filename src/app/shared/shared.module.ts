@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NbLayoutModule } from '@nebular/theme';
+import { NbLayoutModule, NbSelectModule } from '@nebular/theme';
 
 @NgModule({
   declarations: [],
-  imports: [CommonModule, NbLayoutModule],
-  exports: [NbLayoutModule],
+  imports: [CommonModule, NbLayoutModule, NbSelectModule],
+  exports: [NbLayoutModule, NbSelectModule],
 })
 export class SharedModule {}

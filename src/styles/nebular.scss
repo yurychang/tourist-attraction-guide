@@ -1,0 +1,43 @@
+@import './variables.scss';
+@import '~@nebular/theme/styles/theming';
+@import '~@nebular/theme/styles/themes/default';
+
+$nb-themes: nb-register-theme(
+  (
+    font-family-primary: $font-family-sans-serif,
+    color-primary-500: $primary,
+    // layout
+    layout-padding: 0,
+    layout-medium-padding: 0,
+    layout-small-padding: 0,
+    //button
+    button-filled-medium-padding: 0.75rem 1.5rem,
+    button-filled-border-width: 0,
+    button-filled-primary-hover-background-color: darken($primary, 6%),
+    button-filled-primary-focus-background-color: darken($primary, 6%),
+    button-outline-width: 0,
+    button-medium-text-font-size: $font-size-lg,
+    button-medium-text-line-height: 1.25,
+    // select
+    select-min-width: auto,
+    select-rectangle-border-radius: 24.5px,
+    select-outline-medium-padding: 0.75rem 1.5rem,
+    select-outline-basic-hover-background-color: $gray-200,
+    select-outline-border-width: 0,
+    select-outline-basic-icon-color: $gray-700,
+    select-icon-offset: 3.25rem,
+    select-medium-text-font-size: $font-size-lg,
+    select-medium-text-line-height: 1.25,
+    select-medium-text-font-weight: 700,
+    option-list-border-width: 0,
+    option-list-border-radius: 0.375rem,
+    option-list-shadow: $box-shadow-6,
+    option-medium-padding: 0.75rem 1.5rem,
+    option-medium-text-font-size: $font-size-lg,
+    option-selected-background-color: $primary,
+    option-selected-hover-background-color: $primary,
+    option-selected-focus-background-color: $primary,
+  ),
+  default,
+  default
+);

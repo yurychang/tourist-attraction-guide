@@ -1,0 +1,35 @@
+@import 'variables.scss';
+
+.banner {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: center/cover url('../assets/images/index/banner.png') no-repeat;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-size: 96px;
+  color: white;
+  font-family: $font-family-serif;
+
+  &-infix {
+    margin: 0 60px;
+    font-size: 32px;
+  }
+}
+
+.search-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translate(0, -50%);
+}
+
+// ::ng-deep [dir='ltr'] .select-button nb-icon {
+//   right: 24px !important;
+// }
