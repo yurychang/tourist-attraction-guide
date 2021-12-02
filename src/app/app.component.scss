@@ -30,6 +30,11 @@
   transform: translate(0, -50%);
 }
 
-// ::ng-deep [dir='ltr'] .select-button nb-icon {
-//   right: 24px !important;
-// }
+.search-btn {
+  padding: 0.75rem 1.5rem !important;
+
+  nb-icon {
+    width: 25px;
+    height: 25px;
+  }
+}

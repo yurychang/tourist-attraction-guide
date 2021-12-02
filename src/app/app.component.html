@@ -7,22 +7,21 @@
       <div class="search-bar d-flex justify-content-center">
         <div class="row">
           <div class="col">
-            <nb-select placeholder="Select Showcase" selected="0" shape="round">
-              <nb-option value="">Option empty</nb-option>
-              <nb-option value="0">Option 0</nb-option>
+            <nb-select placeholder="Select Showcase" [selected]="cities[0][0]" shape="round">
+              <nb-option *ngFor="let city of cities" [value]="city[0]">{{ city[1] }}</nb-option>
             </nb-select>
           </div>
           <div class="col">
             <nb-select placeholder="Select Showcase" selected="0" shape="round">
-              <nb-option value="">Option empty</nb-option>
-              <nb-option value="0">Option 0</nb-option>
+              <nb-option *ngFor="let type of tourismTypeCn | keyvalue" [value]="type.key">{{
+                type.value
+              }}</nb-option>
             </nb-select>
           </div>
           <div class="col">
-            <nb-select placeholder="Select Showcase" selected="0" shape="round">
-              <nb-option value="">Option empty</nb-option>
-              <nb-option value="0">Option 0</nb-option>
-            </nb-select>
+            <button nbButton shape="round" status="primary" class="search-btn">
+              <nb-icon icon="search" pack="app"></nb-icon>
+            </button>
           </div>
         </div>
       </div>
